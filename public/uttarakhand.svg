@@ -1,0 +1,52 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Uttarakhand Himalayan mountains">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbcfe8"/>
+      <stop offset="0.4" stop-color="#fda4af"/>
+      <stop offset="0.75" stop-color="#fdba74"/>
+      <stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="midRange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#94a3b8"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="foothill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#475569"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="800" height="1000" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="560" cy="240" r="70" fill="#fff7ed" opacity="0.9"/>
+  <circle cx="560" cy="240" r="110" fill="#fff7ed" opacity="0.25"/>
+
+  <!-- far snow peaks (Nanda Devi / Himalayan range) -->
+  <path d="M0 560 L120 360 L210 470 L320 300 L430 480 L540 330 L650 470 L760 360 L800 420 L800 1000 L0 1000 Z" fill="url(#snow)"/>
+  <!-- snow shading lines on peaks -->
+  <path d="M320 300 L360 360 L300 360 Z" fill="#cbd5e1" opacity="0.7"/>
+  <path d="M540 330 L580 400 L500 400 Z" fill="#cbd5e1" opacity="0.7"/>
+  <path d="M120 360 L160 430 L80 430 Z" fill="#cbd5e1" opacity="0.7"/>
+
+  <!-- mid grey range -->
+  <path d="M0 660 L150 540 L300 640 L450 520 L620 650 L760 560 L800 610 L800 1000 L0 1000 Z" fill="url(#midRange)"/>
+
+  <!-- forested foothills -->
+  <path d="M0 800 L180 700 L360 790 L540 690 L720 800 L800 760 L800 1000 L0 1000 Z" fill="url(#foothill)"/>
+
+  <!-- pine treeline -->
+  <g fill="#1e293b">
+    <path d="M120 800 l14 36 l-28 0 z"/>
+    <path d="M200 820 l16 40 l-32 0 z"/>
+    <path d="M300 810 l14 38 l-28 0 z"/>
+    <path d="M430 805 l16 42 l-32 0 z"/>
+    <path d="M560 815 l14 38 l-28 0 z"/>
+    <path d="M650 825 l16 40 l-32 0 z"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd src *)",
+      "Read(//home/tt-18/Mohit/test_next/**)",
+      "Bash(timeout 90 npx next build)",
+      "Bash(curl -s -o /dev/null -w \"login: %{http_code}\\\\n\" http://localhost:3001/login)",
+      "Bash(curl -s http://localhost:3001/login)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"next-server\")",
+      "Bash(curl -s -o /dev/null -w \"home: %{http_code}\\\\n\" http://localhost:3001/)",
+      "Bash(curl -s -o /dev/null -w \"logo.svg: %{http_code}\\\\n\" http://localhost:3001/logo.svg)",
+      "Bash(curl -s -o /dev/null -w \"uttarakhand.svg: %{http_code}\\\\n\" http://localhost:3001/uttarakhand.svg)",
+      "Bash(curl -s http://localhost:3001/)",
+      "Bash(curl -s -o /dev/null -w \"home warm: %{http_code}\\\\n\" http://localhost:3001/)",
+      "Bash(google-chrome --headless --disable-gpu --no-sandbox --hide-scrollbars --window-size=1200,1400 --screenshot=/tmp/home.png http://localhost:3001/)"
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Travelers by a mountain river">
+  <defs>
+    <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="0.6" stop-color="#bae6fd"/>
+      <stop offset="1" stop-color="#fef9c3"/>
+    </linearGradient>
+    <linearGradient id="hsnow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="hmid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="hfront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d9488"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="hriver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bae6fd"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1200" height="675" fill="url(#hsky)"/>
+
+  <!-- pulsing sun -->
+  <g transform="translate(1000 130)">
+    <circle r="75" fill="#fde047" opacity="0.35">
+      <animate attributeName="r" values="75;90;75" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="52" fill="#fde047">
+      <animate attributeName="r" values="52;57;52" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- drifting clouds -->
+  <g fill="#ffffff" opacity="0.9">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="-260 0" to="1300 0" dur="38s" repeatCount="indefinite"/>
+      <ellipse cx="120" cy="110" rx="58" ry="32"/>
+      <ellipse cx="168" cy="102" rx="48" ry="28"/>
+      <ellipse cx="82" cy="102" rx="42" ry="24"/>
+    </g>
+    <g opacity="0.8">
+      <animateTransform attributeName="transform" type="translate" from="-420 0" to="1300 0" dur="56s" repeatCount="indefinite"/>
+      <ellipse cx="520" cy="180" rx="66" ry="36"/>
+      <ellipse cx="578" cy="172" rx="52" ry="30"/>
+      <ellipse cx="470" cy="172" rx="46" ry="26"/>
+    </g>
+  </g>
+
+  <!-- flying birds -->
+  <g stroke="#0f172a" stroke-width="4" stroke-linecap="round" fill="none">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="-80 90" to="1300 180" dur="20s" repeatCount="indefinite"/>
+      <path d="M0 0 q12 -14 24 0 q12 -14 24 0">
+        <animate attributeName="d" values="M0 0 q12 -14 24 0 q12 -14 24 0; M0 0 q12 -4 24 0 q12 -4 24 0; M0 0 q12 -14 24 0 q12 -14 24 0" dur="0.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="-200 140" to="1300 70" dur="26s" repeatCount="indefinite"/>
+      <path d="M0 0 q10 -12 20 0 q10 -12 20 0">
+        <animate attributeName="d" values="M0 0 q10 -12 20 0 q10 -12 20 0; M0 0 q10 -3 20 0 q10 -3 20 0; M0 0 q10 -12 20 0 q10 -12 20 0" dur="0.7s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- far snow peaks -->
+  <path d="M0 420 L150 240 L260 350 L420 200 L560 370 L720 220 L880 360 L1040 240 L1200 330 L1200 675 L0 675 Z" fill="url(#hsnow)"/>
+  <path d="M420 200 L470 280 L370 280 Z" fill="#cbd5e1" opacity="0.7"/>
+  <path d="M720 220 L770 300 L670 300 Z" fill="#cbd5e1" opacity="0.7"/>
+
+  <!-- mid teal range -->
+  <path d="M0 470 L200 380 L380 470 L560 370 L760 480 L960 390 L1200 460 L1200 675 L0 675 Z" fill="url(#hmid)"/>
+
+  <!-- RIVER winding down from the mountains -->
+  <path d="M540 380 C520 460 600 500 560 560 C520 620 660 650 640 675 L760 675 C740 640 860 610 800 560 C760 520 820 470 700 400 C660 376 580 376 540 380 Z" fill="url(#hriver)"/>
+  <!-- river shimmer lines -->
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.7" fill="none">
+    <path d="M580 470 q30 10 60 0">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M600 540 q34 12 68 0">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M620 610 q38 12 76 0">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- front teal banks -->
+  <path d="M0 560 L240 500 L460 590 L520 560 L520 675 L0 675 Z" fill="url(#hfront)"/>
+  <path d="M820 560 L980 510 L1200 580 L1200 675 L800 675 Z" fill="url(#hfront)"/>
+
+  <!-- pine trees on banks -->
+  <g fill="#134e4a">
+    <path d="M120 560 l18 46 l-36 0 z"/>
+    <path d="M210 572 l20 52 l-40 0 z"/>
+    <path d="M360 566 l18 50 l-36 0 z"/>
+    <path d="M930 556 l20 52 l-40 0 z"/>
+    <path d="M1050 566 l18 50 l-36 0 z"/>
+  </g>
+
+  <!-- TRAVELERS with backpacks on the left bank -->
+  <!-- traveler 1 -->
+  <g transform="translate(300 520)">
+    <animateTransform attributeName="transform" type="translate" values="300 520; 300 514; 300 520" dur="2.2s" repeatCount="indefinite"/>
+    <rect x="-12" y="-30" width="16" height="26" rx="6" fill="#f97316"/> <!-- backpack -->
+    <circle cx="2" cy="-40" r="9" fill="#fcd34d"/> <!-- head -->
+    <rect x="-4" y="-32" width="14" height="24" rx="6" fill="#0ea5e9"/> <!-- body -->
+    <rect x="-3" y="-9" width="5" height="14" rx="2" fill="#334155"/> <!-- leg -->
+    <rect x="5" y="-9" width="5" height="14" rx="2" fill="#334155"/> <!-- leg -->
+  </g>
+  <!-- traveler 2 -->
+  <g transform="translate(345 530)">
+    <animateTransform attributeName="transform" type="translate" values="345 530; 345 525; 345 530" dur="2.6s" repeatCount="indefinite"/>
+    <rect x="-12" y="-26" width="15" height="23" rx="6" fill="#e11d48"/> <!-- backpack -->
+    <circle cx="2" cy="-36" r="8" fill="#fcd34d"/> <!-- head -->
+    <rect x="-4" y="-28" width="13" height="22" rx="6" fill="#10b981"/> <!-- body -->
+    <rect x="-3" y="-7" width="5" height="13" rx="2" fill="#334155"/>
+    <rect x="5" y="-7" width="5" height="13" rx="2" fill="#334155"/>
+  </g>
+  <!-- traveler 3 (across, on right bank) -->
+  <g transform="translate(900 525)">
+    <animateTransform attributeName="transform" type="translate" values="900 525; 900 519; 900 525" dur="2.4s" repeatCount="indefinite"/>
+    <rect x="-12" y="-28" width="15" height="24" rx="6" fill="#8b5cf6"/>
+    <circle cx="2" cy="-38" r="9" fill="#fcd34d"/>
+    <rect x="-4" y="-30" width="14" height="23" rx="6" fill="#f59e0b"/>
+    <rect x="-3" y="-8" width="5" height="14" rx="2" fill="#334155"/>
+    <rect x="5" y="-8" width="5" height="14" rx="2" fill="#334155"/>
+  </g>
+</svg>
